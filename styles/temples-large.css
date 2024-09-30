@@ -1,0 +1,37 @@
+/* Large Screen Styles */
+
+/* Header */
+header h1 {
+    font-size: 2em; /* Larger heading size */
+}
+
+header nav ul li a {
+    font-size: 1.2em; /* Larger navigation text */
+}
+
+/* Container */
+.container {
+    max-width: 1800px; /* Set max width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Image styles */
+.container img {
+    width: 300px; /* Fixed size for images */
+    height: 200px; /* Fixed size for images */
+}
+
+/* Header padding */
+header {
+    padding: 30px; /* Increase padding for larger screens */
+}
+
+/* Figure spacing */
+.container figure {
+    margin: 5px; /* Increase margin between figures */
+}
+
+/* Hide hamburger button on larger screens */
+#hamburger {
+    display: none; /* Hide on larger screens */
+}
