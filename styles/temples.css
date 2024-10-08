@@ -59,6 +59,7 @@ header {
     background-color: brown; /* Header background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     width: 100%; /* Full width */
+    
 }
 
 /* Center the nav ul in the header */
@@ -100,6 +101,7 @@ footer {
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.5s; /* Smooth background color transition */
     margin-left: 15px; /* Space to the left of the button */
+
 }
 
 /* Button hover effect */
@@ -112,7 +114,9 @@ footer {
     header nav ul {
         flex-direction: column; /* Stack items vertically on small screens */
         align-items: center; /* Center items */
+
     }
+
 
     header nav ul li {
         margin: 10px 0; /* Space between list items */
@@ -123,5 +127,12 @@ footer {
 /* Expanded state for vertical nav */
 header nav.expanded ul {
     flex-direction: column; /* Change to vertical when expanded */
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: absolute;
+    margin-top: 10px;
 }
 
