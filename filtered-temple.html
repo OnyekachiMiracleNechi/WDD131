@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger">☰</button>
+    </header>
+
+    <div id="navMenu" class="collapsed">
+        <ul>
+            <li><a href="#" id="show-all">Home</a></li>
+            <li><a href="#" id="show-old">Old</a></li>
+            <li><a href="#" id="show-new">New</a></li>
+            <li><a href="#" id="show-large">Large</a></li>
+            <li><a href="#" id="show-small">Small</a></li>
+        </ul>
+    </div>
+
+
+            <div class="container" id="temple-container">
+                <div class="temple-card">
+                    <div class="img tag"></div>
+                    <div class="description">
+                        <h2>Temple Name</h2>
+                        <p>Description of the temple goes here.</p>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Nechi Onyekachi Miracle, Logos state/Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

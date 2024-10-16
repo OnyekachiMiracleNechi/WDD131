@@ -1,0 +1,138 @@
+/* Container styles for all temple cards */
+.container {
+    display: flex; /* Default to flex for larger screens */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    padding: 1rem; /* Space around the container */
+}
+
+.temple-card {
+    border: 1px solid plum; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    padding: 15px;
+
+    
+}
+
+.temple-card img {
+    width: 100%; /* Make image width responsive */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        display: block; /* Change to block layout for mobile */
+    }
+
+    .temple-card {
+        margin: 1rem 0; /* Add vertical margin for spacing between cards */
+    }
+}
+
+/* Container styles for each temple card */
+.temple-card {
+    border: 1px solid plum; /* Border around the card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow the card */
+    margin: 1rem; /* Space between cards */
+    background: #fff; /* Background color for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+}
+
+/* Image styles */
+.img.tag {
+    width: 100%; /* Full width of the card */
+    max-width: 300px;
+    height: 200px; /* Fixed height for the image */
+    background: #fff; /* Placeholder background */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 5px;
+}
+
+
+
+/* Description styles */
+.description {
+    padding: 1rem; /* Space around the text */
+}
+
+/* Heading style for temple name */
+.description h2 {
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+/* Paragraph style for description */
+.description p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Header styles */
+header {
+    background: plum;
+    color: #444;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Enable positioning for child elements */
+}
+
+/* Hamburger button styles */
+#hamburger {
+    position: absolute; /* Position it relative to the header */
+    top: 1rem; /* Align with the header */
+    right: 1rem; /* Right alignment */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Navigation styles */
+#navMenu {
+    display: none; /* Hide by default */
+    background: #fff; /* Background color for the dropdown */
+    border: 1px solid ; /* Small border */
+    position: absolute; /* Position it relative to the header */
+    top: 50px; /* Below the header */
+    right: 1rem; /* Align with the right side */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+#navMenu.active {
+    display: block; /* Show when active */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #444;
+    color: #fff;
+}
+
+footer{
+    background-color: plum;
+    text-align: center;
+    color: #444;
+    margin: 20pxs;
+    padding: 20px;
+}
