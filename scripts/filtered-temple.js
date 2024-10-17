@@ -123,25 +123,26 @@ const temples = [
 
 
 
-
-
-  function displayTemples(templesArray) {
-    const container = document.getElementById('temple-container');
-    container.innerHTML = ''; // Clear previous content
-    
-    templesArray.forEach(temple => {
-        const card = document.createElement('div');
-        card.classList.add('temple-card');
-        card.innerHTML = `
-            <h3>${temple.templeName}</h3>
-            <p>${temple.location}</p>
-            <p>Dedicated: ${temple.dedicated}</p>
-            <p>Area: ${temple.area} sq ft</p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-        `;
-        container.appendChild(card);
-    });
+function displayTemples(templesArray) {
+  const container = document.getElementById('temple-container');
+  container.innerHTML = ''; // Clear previous content
+  
+  templesArray.forEach(temple => {
+      const card = document.createElement('div');
+      card.classList.add('temple-card');
+      card.innerHTML = `
+          <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+          <h3>${temple.templeName}</h3>
+          <p>${temple.location}</p>
+          <p>Dedicated: ${temple.dedicated}</p>
+          <p>Area: ${temple.area} sq ft</p>
+      `;
+      container.appendChild(card);
+  });
 }
+
+
+
 
 
 
