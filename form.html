@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required>&starf;</label>
+                <label><input type="radio" name="rating" value="2" required>&starf;&starf;</label>
+                <label><input type="radio" name="rating" value="3" required>&starf;&starf;&starf;</label>
+                <label><input type="radio" name="rating" value="4" required>&starf;&starf;&starf;&starf;</label>
+                <label><input type="radio" name="rating" value="5" required>&starf;&starf;&starf;&starf;&starf;</label>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Useful Features (check all that apply):</legend>
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Value for Money"> Value for Money</label>
+                <label><input type="checkbox" name="features" value="Customer Support"> Customer Support</label>
+                <label><input type="checkbox" name="features" value="Aesthetics"> Aesthetics</label>
+            </fieldset>
+
+            <label for="writtenReview">Written Review:</label>
+            <textarea id="writtenReview" name="writtenReview" placeholder="Optional"></textarea>
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" placeholder="Optional">
+
+            <input type="submit" class="submit-button" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Nechi Onyekachi Miracle, Lagos state/Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
