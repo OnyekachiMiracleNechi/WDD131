@@ -53,10 +53,13 @@ nav ul li a {
     
 }
 
-nav ul li a:hover {
-    background: #444;
-    color: #fff;
+
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #444; /* Or any color that indicates it’s active */
 }
+
 
 /* Container styles for all temple cards */
 .container {
@@ -106,6 +109,8 @@ footer {
         right: 1rem; /* Align with the right side */
         z-index: 1000; /* Ensure it appears above other content */
         border: 1px solid plum; /* Add a border for better visibility */
+        padding: 10px;
+        padding-right: 20px;
     }
 
     #navMenu.active {
@@ -156,5 +161,6 @@ footer {
         padding: 10px; /* Good padding for nav items */
         text-align: center;
     }
+
     
 }

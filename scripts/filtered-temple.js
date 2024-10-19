@@ -114,11 +114,21 @@ const temples = [
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
 
+    // Show the home content by default
+    displayTemples(temples);
+
+    // Highlight home nav
+    const homeNavItem = document.querySelector('#navMenu li:first-child a'); // Assuming first item is Home
+    homeNavItem.classList.add('active'); // Add 'active' class
+
     hamburger.addEventListener('click', function () {
         navMenu.classList.toggle('active'); // Toggle the 'active' class
         hamburger.textContent = navMenu.classList.contains('active') ? '✖' : '☰'; // Change to "X" or hamburger
     });
 });
+
+
+
 
 
 
