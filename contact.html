@@ -14,15 +14,17 @@
         <button id="hamburger">☰</button>
         <nav>
             <ul>
-                <li><a href="indexx.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="indexx.html" aria-label="Home page">Home</a></li>
+                <li><a href="services.html" aria-label="Our services">Services</a></li>
+                <li><a href="about.html" aria-label="About us">About</a></li>
+                <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Personal Data</h2>
+        <div class="form-flex-container">
         <div class="form-container">
+            <h2>Personal Data</h2>
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
@@ -37,8 +39,9 @@
             </form>
         </div>
 
-        <h2>Place an Order</h2>
+        
         <div class="form-container">
+            <h2>Place an Order</h2>
             <form id="order-form">
                 <label for="order-name">Name:</label>
                 <input type="text" id="order-name" required>
@@ -60,7 +63,8 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 TransportHub. All rights reserved.</p>
+        <p>© <span id="currentyear"></span> Nechi Onyekachi Miracle, Lagos state/Nigeria</p>
+        <p id="lastModified"></p>
         <a href="attributions.html">Attributions</a>
     </footer>
 </body>

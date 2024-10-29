@@ -47,7 +47,6 @@ nav ul li {
 nav a {
     color: #ffcc00;
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
 }
 
 nav a:hover {
@@ -55,25 +54,23 @@ nav a:hover {
     color: orangered;
 }
 
-main{
-    background-color: #ccc;
-}
-
-
-main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: -1; /* Send the overlay behind content */
+/* Main Content Styles */
+main {
+    background-image: url('../images/background2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Allow main to take remaining space */
 }
 
 /* Paragraph Text Color */
 p {
-    color: black; /* Set paragraph text color to black */
+    color: black; /* Set paragraph text color to navy */
 }
 
 /* Info Box Styles */
@@ -141,7 +138,6 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-
     #hamburger {
         display: block; /* Show hamburger button on small screens */
     }
@@ -161,9 +157,7 @@ footer {
         display: flex; /* Show when active */
     }
 
-   
 
-    
 
     .info-container {
         flex-direction: column; /* Stack info boxes vertically on small screens */
@@ -172,13 +166,5 @@ footer {
     .image-container img {
         width: 100%; /* Full width on small screens */
         margin-bottom: 10px; /* Space below images */
-    }
-
-    h2 {
-        font-size: 1.5rem; /* Adjust as necessary */
-    }
-
-    h3 {
-        font-size: 1.25rem; /* Adjust as necessary */
     }
 }

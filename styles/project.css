@@ -1,254 +1,160 @@
+/* General Styles */
 body {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* White background */
-    color:  orangered; /* Text color */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Padding for body */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    background-image: url('../images/background2.avif'); /* Background image */
+    background-size: cover; /* Cover the whole area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat */
 }
 
-h1, h2, h3 {
-    color: orangered; /* Navy blue for headings */
-}
-
-h1 {
-    font-size: 2.5em; /* Large header size */
-    margin-bottom: 20px; /* Space below h1 */
-}
-
-h3 {
-    font-size: 1.5em; /* Subheader size */
-    margin: 20px 0 10px; /* Space above and below h3 */
-}
-
-
-
+/* Header Styles */
 header {
-    background-color: navy; /* Navy background for header */
-    border: 2px solid #000; /* Border around the header */
-    padding: 10px 20px; /* Add horizontal padding for spacing */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Align items in a row */
-    align-items: center; /* Center items vertically */
-    position: relative; /* Keep stacking context */
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav */
 }
 
 #logo {
-    width: 80px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between logo and title */
+    width: 80px;
+    height: auto;
 }
 
 h1 {
-    color: white; /* Header title color */
-    margin: 0; /* Remove margin */
-    flex-grow: 1; /* Allow title to take available space */
+    margin: 10px;
 }
 
+/* Navigation Styles */
 nav {
-    margin-left: 20px; /* Space between title and navigation */
+    margin-left: auto; /* Push nav to the right */
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox to display items in a row */
-    justify-content: center; /* Center the nav items */
+    list-style-type: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flex for nav items */
 }
 
 nav ul li {
-    margin-right: 20px; /* Space between items */
-}
-
-nav ul li:last-child {
-    margin-right: 0; /* Remove margin for the last item */
+    margin-right: 20px; /* Space between nav items */
 }
 
 nav a {
-    color: #ffcc00; /* Yellow for links */
-    text-decoration: none; /* Remove underline */
+    color: #ffcc00;
+    text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: orangered; /* Change color on hover */
+    text-decoration: underline;
+    color: orangered;
 }
 
+/* Hamburger Button Styles */
+#hamburger {
+    display: none; /* Hide by default, show on small screens */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffcc00; /* Color for the hamburger icon */
+    cursor: pointer;
+}
+
+/* Main Styles */
 main {
-    background-image: url('../images/background2.avif'); /* Background image */
-    background-size: cover; /* Fill the entire main area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: calc(100vh - 160px); /* Adjust height to fit between header and footer */
-    padding: 20px; /* Padding for content */
-    display: flex; /* Enable flexbox on the main element */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    margin: 20px; /* Add margin to the main section */
+    flex: 1; /* Allow main to grow and fill available space */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text */
 }
 
+/* Button Styles */
+#cta-button {
+    padding: 10px 15px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above button */
+}
+
+#cta-button:hover {
+    background-color: orangered;
+}
+
+/* Features Section Styles */
+.features {
+    margin-top: 40px;
+    display: flex; /* Flex for the features container */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+}
+
+.feature-item {
+    display: flex; /* Use flex for layout */
+    flex-direction: column; /* Stack image and text */
+    width: 30%; /* Width of each feature item */
+    margin: 10px;
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ccc; /* Border around feature item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    background-color: #fff; /* Background for feature items */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.feature-image {
+    width: 100%; /* Full width of the image */
+    border-radius: 8px; /* Rounded corners for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styles */
 footer {
-    margin-top: 30px; /* Space above footer */
-    padding: 10px; /* Padding in footer */
-    background-color: lightblue; /* Light blue background for the footer */
-    text-align: center; /* Center footer text */
-    border-top: 1px solid #ccc; /* Top border for footer */
+    margin-top: 30px;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
 
-/* Add this to your existing CSS file */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-}
-
-#hamburger {
-    cursor: pointer;
-    font-size: 24px;
-    display: none; /* Hidden by default */
-}
-
-#navbar {
-    display: flex;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
     #hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
-
-    #navbar {
-        display: none; /* Hide navbar by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust according to your header height */
-        left: 0;
-        right: 0;
-        background-color: white; /* Optional: background color */
-        z-index: 1000; /* Ensures it appears above other content */
-    }
-
-    #navbar.active {
-        display: flex; /* Show navbar when active */
+        display: block; /* Show hamburger button on small screens */
     }
 
     nav ul {
-        flex-direction: column; /* Stack menu items vertically */
+        display: none; /* Hide nav menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position the nav */
+        top: 60px; /* Position below header */
+        right: 10px; /* Align to the right */
+        background-color: navy; /* Match the header */
+        border: 1px solid #ccc; /* Border for dropdown */
+        z-index: 1000; /* Ensure it appears above other content */
     }
 
-    nav ul li {
-        margin: 10px 0; /* Space between items */
-    }
-}
-
-
-
-/* Responsive Styles */
-@media (min-width: 768px) {
-    main {
-        display: flex; /* Use flexbox for main on larger screens */
-        flex-wrap: wrap; /* Allow wrapping of form containers */
-        justify-content: space-between; /* Space between form containers */
-    }
-}
-
-@media (max-width: 767px) {
-    main {
-        display: grid; /* Use grid layout on smaller screens */
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid */
-        gap: 20px; /* Space between grid items */
-    }
-}
-
-
-/* Add this to your existing CSS file */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-}
-
-#hamburger {
-    cursor: pointer;
-    font-size: 24px;
-    display: none; /* Hidden by default */
-}
-
-#navbar {
-    display: flex;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
-    #hamburger {
-        display: block; /* Show hamburger icon on mobile */
+    nav ul.active {
+        display: flex; /* Show when active */
     }
 
-    #navbar {
-        display: none; /* Hide navbar by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust according to your header height */
-        left: 0;
-        right: 0;
-        background-color: white; /* Optional: background color */
-        z-index: 1000; /* Ensures it appears above other content */
-    }
-
-    #navbar.active {
-        display: flex; /* Show navbar when active */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack menu items vertically */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Space between items */
+    .feature-item {
+        width: 100%; /* Stack feature items on small screens */
+        margin: 10px 0; /* Space between stacked items */
     }
 }

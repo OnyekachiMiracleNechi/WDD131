@@ -97,32 +97,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    #hamburger {
-        display: block; /* Show hamburger button on small screens */
-    }
-
-    #navMenu {
-        display: none; /* Hide nav menu by default */
-        background: #fff; /* Background color for dropdown */
-        position: absolute; /* Position it below the header */
-        top: 60px; /* Below the header */
-        right: 1rem; /* Align with the right side */
-        z-index: 1000; /* Ensure it appears above other content */
-        border: 1px solid plum; /* Add a border for better visibility */
-        padding: 10px;
-        padding-right: 20px;
-    }
-
-    #navMenu.active {
-        display: flex; /* Show nav items when active */
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Make the nav full width on small screens */
-    }
-
+   
     .container {
         display: block; /* Change to block layout for mobile */
         padding: 20px;
