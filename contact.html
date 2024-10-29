@@ -3,37 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transport Company - Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TransportHub - Contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/project.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <img src="images/logo.avif" alt="TransportHub Logo" id="logo">
+        <h1>TransportHub</h1>
+        <button id="hamburger">☰</button>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="indexx.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <h2>Personal Data</h2>
+        <div class="form-container">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <h2>Place an Order</h2>
+        <div class="form-container">
+            <form id="order-form">
+                <label for="order-name">Name:</label>
+                <input type="text" id="order-name" required>
+
+
+                <label for="service">Service Type:</label>
+                <select id="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="transport">Transport</option>
+                    <option value="logistics">Logistics</option>
+                </select>
+
+                <label for="order-details">Order Details:</label>
+                <textarea id="order-details" rows="5" required></textarea>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Transport Company</p>
+        <p>&copy; 2024 TransportHub. All rights reserved.</p>
         <a href="attributions.html">Attributions</a>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

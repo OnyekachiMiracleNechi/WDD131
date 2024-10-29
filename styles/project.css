@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color:  orangered; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Padding for body */
+}
+
+h1, h2, h3 {
+    color: orangered; /* Navy blue for headings */
+}
+
+h1 {
+    font-size: 2.5em; /* Large header size */
+    margin-bottom: 20px; /* Space below h1 */
+}
+
+h3 {
+    font-size: 1.5em; /* Subheader size */
+    margin: 20px 0 10px; /* Space above and below h3 */
+}
+
+
+
+header {
+    background-color: navy; /* Navy background for header */
+    border: 2px solid #000; /* Border around the header */
+    padding: 10px 20px; /* Add horizontal padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Keep stacking context */
+}
+
+#logo {
+    width: 80px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+h1 {
+    color: white; /* Header title color */
+    margin: 0; /* Remove margin */
+    flex-grow: 1; /* Allow title to take available space */
+}
+
+nav {
+    margin-left: 20px; /* Space between title and navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to display items in a row */
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+nav a {
+    color: #ffcc00; /* Yellow for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: orangered; /* Change color on hover */
+}
+
+main {
+    background-image: url('../images/background2.avif'); /* Background image */
+    background-size: cover; /* Fill the entire main area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: calc(100vh - 160px); /* Adjust height to fit between header and footer */
+    padding: 20px; /* Padding for content */
+    display: flex; /* Enable flexbox on the main element */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    margin: 20px; /* Add margin to the main section */
+}
+
+footer {
+    margin-top: 30px; /* Space above footer */
+    padding: 10px; /* Padding in footer */
+    background-color: lightblue; /* Light blue background for the footer */
+    text-align: center; /* Center footer text */
+    border-top: 1px solid #ccc; /* Top border for footer */
+}
+
+/* Add this to your existing CSS file */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+#hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Hidden by default */
+}
+
+#navbar {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    #navbar {
+        display: none; /* Hide navbar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust according to your header height */
+        left: 0;
+        right: 0;
+        background-color: white; /* Optional: background color */
+        z-index: 1000; /* Ensures it appears above other content */
+    }
+
+    #navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    main {
+        display: flex; /* Use flexbox for main on larger screens */
+        flex-wrap: wrap; /* Allow wrapping of form containers */
+        justify-content: space-between; /* Space between form containers */
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        display: grid; /* Use grid layout on smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid */
+        gap: 20px; /* Space between grid items */
+    }
+}
+
+
+/* Add this to your existing CSS file */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+#hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Hidden by default */
+}
+
+#navbar {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    #navbar {
+        display: none; /* Hide navbar by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust according to your header height */
+        left: 0;
+        right: 0;
+        background-color: white; /* Optional: background color */
+        z-index: 1000; /* Ensures it appears above other content */
+    }
+
+    #navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+}

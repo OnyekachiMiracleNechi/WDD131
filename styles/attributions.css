@@ -1,0 +1,51 @@
+header {
+    background-color: navy; /* Navy background for header */
+    border: 2px solid #000; /* Border around the header */
+    padding: 10px 20px; /* Add horizontal padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    position: relative; /* Keep stacking context */
+}
+
+#logo {
+    width: 80px; /* Adjust logo size to fit better */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+h1 {
+    color: white; /* Header title color */
+    margin: 0; /* Remove margin */
+    flex-grow: 1; /* Allow title to take available space */
+}
+
+nav {
+    margin-left: 20px; /* Space between title and navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to display items in a row */
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add space between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+nav a {
+    color: #ffcc00; /* Yellow for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: orangered; /* Change color on hover */
+}
